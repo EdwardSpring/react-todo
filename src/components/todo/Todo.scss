@@ -1,0 +1,26 @@
+@import "../../sass/mixins";
+
+.todo {
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  transition: 1s;
+
+  align-items: center;
+  margin: 15px 0;
+  @include animate(appear, 1s, ease-in-out, 1);
+
+  @include keyframe(appear) {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .todo-checkbox {
+    zoom: 1.9;
+    margin-right: 5px;
+  }
+}

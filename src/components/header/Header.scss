@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  // border: 1px solid red;
+
+  .header_main {
+    //   border: 1px solid red;
+    h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+
+  .header_date {
+    display: flex;
+    flex-direction: row;
+    //   border: 1px solid red;
+
+    .date_left {
+      margin-right: 10px;
+      .day {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        text-align: right;
+      }
+    }
+
+    .date_right {
+      .img-div {
+        width: 60%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

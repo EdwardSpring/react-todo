@@ -1,0 +1,33 @@
+// Breakpoints are below
+
+/* Extra small devices (phones, 600px and down) */
+@mixin mobile {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin largeMobile {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin largeDesktop {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
