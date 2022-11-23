@@ -12,7 +12,7 @@ const Header = ({ title }) => {
       <div className="header_date">
         <div className="date_left">
           <p className="day">today</p>
-          <p className="date">17 Feb 2022</p>
+          <p className="date">{new Date().toDateString()}</p>
           {/* <p>
             <a href="/about">About</a>
           </p> */}
